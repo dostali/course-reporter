@@ -3,7 +3,7 @@ package az.bdc.courserepoter.service.impl;
 import az.bdc.courserepoter.constant.SqlCommands;
 import az.bdc.courserepoter.domain.Course;
 import az.bdc.courserepoter.service.CourseService;
-import az.bdc.courserepoter.service.DatabaseConncetion;
+import az.bdc.courserepoter.service.databaseConnection;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-public class CourseServiceImpl extends DatabaseConncetion implements CourseService {
+public class CourseServiceImpl extends databaseConnection implements CourseService {
 
     @Override
     public List<Course> getAll() {
