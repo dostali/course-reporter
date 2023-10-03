@@ -27,7 +27,7 @@ public class StudentServiceImpl extends databaseConnection implements StudentSer
                 student.setId(resultSet.getLong("id"));
                 student.setName(resultSet.getString("name"));
                 student.setSurname(resultSet.getString("surname"));
-                student.setFullName(resultSet.getString("fullname"));
+                student.setFullName();
                 student.setBirthDate(resultSet.getDate("birthdate"));
                 student.setPhoneNumber(resultSet.getString("phone_number"));
                 student.setPinCode(resultSet.getString("pincode"));

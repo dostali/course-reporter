@@ -30,7 +30,7 @@ public class Main {
         student.setId(1);
         student.setName("Tural");
         student.setSurname("Museyibov");
-        student.setFullName("Tural Museyibov");
+        student.setFullName();
         student.setPhoneNumber("+994 51 660 22 92");
         student.setPinCode("1234");
 

@@ -67,8 +67,8 @@ public class Student {
         return fullName;
     }
 
-    public void setFullName(String fullName) {
-        this.fullName = fullName;
+    public void setFullName() {
+        this.fullName = this.name + " " + this.surname;
     }
 
     public Date getBirthDate() {
