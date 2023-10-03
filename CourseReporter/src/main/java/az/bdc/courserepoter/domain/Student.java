@@ -1,13 +1,14 @@
 package az.bdc.courserepoter.domain;
 
 import java.time.LocalDateTime;
+import java.util.Date;
 
 public class Student {
     private long id;
     private String name;
     private String surname;
     private String fullName;
-    private LocalDateTime birthDate;
+    private Date birthDate;
     private String phoneNumber;
     private String pinCode;
     private LocalDateTime createDate;
@@ -17,7 +18,7 @@ public class Student {
                    String name,
                    String surname,
                    String fullName,
-                   LocalDateTime birthDate,
+                   Date birthDate,
                    String phoneNumber,
                    String pinCode,
                    LocalDateTime createDate,
@@ -70,11 +71,11 @@ public class Student {
         this.fullName = fullName;
     }
 
-    public LocalDateTime getBirthDate() {
+    public Date getBirthDate() {
         return birthDate;
     }
 
-    public void setBirthDate(LocalDateTime birthDate) {
+    public void setBirthDate(Date birthDate) {
         this.birthDate = birthDate;
     }
 
