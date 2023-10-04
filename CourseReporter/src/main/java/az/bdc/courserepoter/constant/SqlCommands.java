@@ -12,6 +12,13 @@ public final class SqlCommands {
         public final static String UPDATE_SET = "update course set name=?, address=?, phone_number=?, update_date=? where id = ?";
     }
 
+    public static class Teacher {
+        public final static String SELECT_ALL = "select * from teacher ";
+        public final static String INSERT_INTO = "insert into teacher (name,surname,phone_number,create_date,update_date) values (?,?,?,?,?)";
+        public final static String DELETE_BY_ID = "delete from teacher where id=?";
+        public final static String UPDATE_SET = "update teacher name=?,surname=?,phone_number=?,update_date=? where id=?)";
+    }
+
     static class Students{
 
     }
