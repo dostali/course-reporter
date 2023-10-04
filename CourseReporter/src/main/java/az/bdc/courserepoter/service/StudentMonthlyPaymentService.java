@@ -1,4 +1,4 @@
-package az.bdc.courserepoter.service.impl;
+package az.bdc.courserepoter.service;
 
 import az.bdc.courserepoter.domain.Course;
 import az.bdc.courserepoter.domain.StudentMonthlyPayment;
