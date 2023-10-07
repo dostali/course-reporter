@@ -1,8 +1,11 @@
 package az.bdc.courserepoter;
 
 import az.bdc.courserepoter.domain.Course;
+import az.bdc.courserepoter.domain.CourseStudentContract;
 import az.bdc.courserepoter.service.CourseService;
+import az.bdc.courserepoter.service.CourseStudentContractService;
 import az.bdc.courserepoter.service.impl.CourseServiceImpl;
+import az.bdc.courserepoter.service.impl.CourseStudentContractServiceImpl;
 
 import java.time.LocalDateTime;
 
