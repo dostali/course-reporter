@@ -21,5 +21,19 @@ public final class SqlCommands {
         public final static String UPDATE_SET = "update student_monthly_payment set amount=?, month=?, contract_id=?, update_date=? where id = ?";
     }
 
+    public static class CourseDetails{
+            public final static String SELECT_ALL = "select * from course_details";
+        public final static String INSERT_INTO = "insert into course_details(name, adress, phone_number, course_id) values(?,?,?,?)";
+        public final static String DELETE_BY_ID = "delete from course_details where id=?";
+        public final static String UPDATE_SET = "update course_details set name=?, adress=?,phone_name=?, course_id=? where id = ?";
+    }
+
+    public static class TeacherSubjects{
+        public final static String SELECT_ALL = "select * from teacher_subjects";
+        public final static String INSERT_INTO = "insert into teacher_subjects(teacher_id,subject_id,fullname) values(?,?,?)";
+        public final static String DELETE_BY_ID = "delete from teacher_subjects where id=?";
+        public final static String UPDATE_SET = "update teacher_subjects set teacher_id=?, subject_id=?, fullname=? where id = ?";
+    }
+
 
 }
