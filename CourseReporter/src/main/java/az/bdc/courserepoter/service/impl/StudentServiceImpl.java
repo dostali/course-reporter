@@ -3,7 +3,7 @@ package az.bdc.courserepoter.service.impl;
 import az.bdc.courserepoter.constant.SqlCommands;
 import az.bdc.courserepoter.domain.Student;
 import az.bdc.courserepoter.service.StudentService;
-import az.bdc.courserepoter.service.databaseConnection;
+import az.bdc.courserepoter.service.DatabaseConnection;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -13,7 +13,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-public class StudentServiceImpl extends databaseConnection implements StudentService {
+public class StudentServiceImpl extends DatabaseConnection implements StudentService {
 
     @Override
     public List<Student> getAll() {
