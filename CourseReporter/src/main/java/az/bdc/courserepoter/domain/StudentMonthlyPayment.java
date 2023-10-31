@@ -14,7 +14,8 @@ public class StudentMonthlyPayment {
     public StudentMonthlyPayment() {
     }
 
-    public StudentMonthlyPayment(long id, double amount, String month, long contract_id, LocalDateTime create_date, LocalDateTime update_date) {
+    public StudentMonthlyPayment(long id, double amount, String month, long contract_id,
+                                 LocalDateTime create_date, LocalDateTime update_date) {
         this.id = id;
         this.amount = amount;
         this.month = month;

@@ -57,18 +57,18 @@ public class CourseServiceImpl extends DatabaseConncetion implements CourseServi
 
     @Override
     public boolean update(Course course) {
-        try (Connection connection = connect()) {
-            PreparedStatement preparedStatement = connection.prepareStatement(SqlCommands.Course.UPDATE_SET);
-            preparedStatement.setString(1, course.getName());
-            preparedStatement.setString(2, course.getAddress());
-            preparedStatement.setString(3, course.getPhoneNumber());
-            preparedStatement.setObject(4, course.getUpdateDate());
-            preparedStatement.setLong(5, course.getId());
-            return preparedStatement.execute();
-        } catch (SQLException e) {
-            e.printStackTrace();
-            throw new RuntimeException(e.getMessage());
-        }
+            try (Connection connection = connect()) {
+                PreparedStatement preparedStatement = connection.prepareStatement(SqlCommands.Course.UPDATE_SET);
+                preparedStatement.setString(1, course.getName());
+                preparedStatement.setString(2, course.getAddress());
+                preparedStatement.setString(3, course.getPhoneNumber());
+                preparedStatement.setObject(4, course.getUpdateDate());
+                preparedStatement.setLong(5, course.getId());
+                return preparedStatement.execute();
+            } catch (SQLException e) {
+                e.printStackTrace();
+                throw new RuntimeException(e.getMessage());
+            }
     }
 
     @Override
